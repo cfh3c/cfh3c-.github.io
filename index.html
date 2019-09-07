@@ -78,10 +78,14 @@
 <h3>Activities</h3>
 <ol>
     <li>
+	<div class="demo-vdeio" style="font-size: 18px">
+		<span>For more details about the system, please click here: </span>
+		<span>
+			<button id="button_show_video" style=" width:500px; height:30px;padding-right:15px;padding-left:15px;border-right:5px solid #eee;border-left:0;-webkit-border-radius:6px 6px 6px 6px;-moz-border-radius:6px 0 6px 6px;border-radius:6px 6px 6px 6px; font-size:18px">Demo for cross-media sentiment analysis system </button>
+		</span>
+	</div>
         <div id="part_show_video" style=" margin-left:80px;width:800px; height:500px; background-color:#0F6; display:none">
-			<!--<embed src="http://player.youku.com/player.php/sid/XNzQyMTEzMjQ4/v.swf" allowFullScreen="true" quality="high" width="800" height="500" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>-->
-			<!--<embed src="video/demo.avi" autostart=false loop=false width=350 height=250>-->
-			<embed src="CrossMediaSentimentPredictionSystem.mp4" autostart=false loop=false width=800 height=500>
+		<embed src="CrossMediaSentimentPredictionSystem.mp4" autostart=false loop=false width=800 height=500>
         </div>
     </li>
     <li>Interdiscipline Research Participations: MRI Data based MCI Identification with <a href="http://www.gaoyue.org/cn_tsinghua/people/gaoyue_index.html">A/Prof. Yue Gao</a> (2014), Financial Sentiment Dictionary Construction with <a href="http://jiaquanyao.weebly.com/">Prof. Jiaquan Yao</a> (2016), Policy Uncertainty Estimation with <a href="http://wise.xmu.edu.cn/english/people/faculty/5df86174-33fa-440c-95e1-4c235150aad1.html">A/Prof. Juanjuan Huang</a> (2017), and Real-time CEO Facial Expression Classification with Dr. Lefu Wang (2017). </li>
@@ -105,5 +109,26 @@ National Scholarship, China, 2018 <br>
 other extramural scholarships ("Lu yan", CMBC-struggling, and ICBC Scholarships)<br>
 <br><br><br>
 
+<script>
+	var times_mouseon = 0;
+	function onPageLoad()
+	{
+		//$('#bar-char-trigger').mouseenter(function()
+		$('#button_show_video').mousedown(function()
+		{
+			if(times_mouseon==0)
+			{
+				$('#part_show_video').slideDown();
+				times_mouseon=1;
+			}
+			else if(times_mouseon==1)
+			{
+				$('#part_show_video').slideUp();
+				times_mouseon=0;
+			}
+		});
+		//$('#barChartDiv').mouseleave(function(){$('#barChartDiv').slideUp();});
+	}
+</script>
 </body>
 

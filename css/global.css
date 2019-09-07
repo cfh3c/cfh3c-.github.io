@@ -1,0 +1,22 @@
+/* 
+	Resets defualt browser settings
+	reset.css
+*/
+/*
+a:link,a:visited {
+	color:#599100;
+	text-decoration:none;
+}
+
+a:hover,a:active {
+	color:#599100;
+	text-decoration:underline;
+}
+*/
+.demo-video {
+	position:relative;
+	font-weight: bold;
+	font-size: 20px;
+	margin-top: 40px;
+	text-align: center;
+}
